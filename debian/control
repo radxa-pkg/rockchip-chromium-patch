@@ -13,6 +13,7 @@ Package: rockchip-chromium-x11-utils
 Architecture: all
 Section: admin
 Priority: standard
+Breaks: rockchip-chromium-x11-utils (<< 0.2.0)
 Depends: ${misc:Depends},
 Enhances: chromium-x11
 Description: Support package for Rockchip Chromium

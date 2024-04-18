@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+case $1 in
+    upgrade)
+        # `chromium-wrapper` is no longer provided
+        # Clean up dpkg-divert for version << 0.2.0
+        conflicts="/usr/lib/chromium/chromium-wrapper"
+        if [ "$(dpkg-divert --listpackage "$conflicts")" = "rockchip-chromium-x11-utils" ]
+        then
+            dpkg-divert --package rockchip-chromium-x11-utils --rename --remove "$conflicts"
+        fi
+        ;;
+esac
+
+exit 0
