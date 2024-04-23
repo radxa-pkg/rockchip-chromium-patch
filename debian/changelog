@@ -1,3 +1,14 @@
+rockchip-chromium-x11-utils (0.2.2) jammy; urgency=medium
+
+  [ dependabot[bot] ]
+  * Bump softprops/action-gh-release from 1 to 2
+
+  [ CodeChenL ]
+  * fix: repair chromium installation failure
+  * feat: add CODEOWNERS
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 23 Apr 2024 06:34:11 +0000
+
 rockchip-chromium-x11-utils (0.2.1) jammy; urgency=medium
 
   [ dependabot[bot] ]
