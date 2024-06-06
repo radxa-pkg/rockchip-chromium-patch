@@ -2,7 +2,7 @@
 set -e
 
 case $1 in
-    upgrade)
+    configure)
         # `chromium-wrapper` is no longer provided
         # Clean up dpkg-divert for version << 0.2.0
         conflicts="/usr/lib/chromium/chromium-wrapper"
